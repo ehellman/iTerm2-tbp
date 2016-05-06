@@ -1,4 +1,5 @@
 # iTerm2 with custom patches
 ### Borderless
+Removed title bar.
 ### Padding
-### New option to make the transparency slider only affect the window background and not the text
+Increased padding to 15.
