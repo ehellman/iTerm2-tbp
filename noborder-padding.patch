@@ -1,0 +1,32 @@
+diff --git a/sources/PseudoTerminal.m b/sources/PseudoTerminal.m
+index 4769902..76938b2 100644
+--- a/sources/PseudoTerminal.m
++++ b/sources/PseudoTerminal.m
+@@ -337,8 +337,7 @@ + (NSInteger)styleMaskForWindowType:(iTermWindowType)windowType {
+             return NSBorderlessWindowMask;
+ 
+         default:
+-            return (NSTitledWindowMask |
+-                    NSClosableWindowMask |
++            return (NSClosableWindowMask |
+                     NSMiniaturizableWindowMask |
+                     NSResizableWindowMask |
+                     NSTexturedBackgroundWindowMask);
+diff --git a/sources/iTermTextDrawingHelper.h b/sources/iTermTextDrawingHelper.h
+index 1cf1032..ab98d71 100644
+--- a/sources/iTermTextDrawingHelper.h
++++ b/sources/iTermTextDrawingHelper.h
+@@ -13,10 +13,10 @@
+ #import "VT100GridTypes.h"
+ 
+ // Number of pixels margin on left and right edge.
+-#define MARGIN 5
++#define MARGIN 15
+ 
+ // Number of pixels margin on the top.
+-#define VMARGIN 2
++#define VMARGIN 15
+ 
+ @class iTermColorMap;
+ @class iTermFindOnPageHelper;
+
